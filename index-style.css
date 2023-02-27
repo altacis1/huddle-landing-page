@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:wght@800&display=swap');
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%); 
+    --very-pale-blue: hsl(207, 100%, 98%);
+    --headings-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* width: 100vw; */
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+header{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+header img{
+    height: 2rem;
+}
+header button{
+    border: 1px solid var(--light-pink);
+    border-radius: 1rem;
+    color: var(--light-pink);
+    padding: .4rem 1rem .4rem 1rem;
+    background-color: var(--very-pale-blue);
+    font-size: 1em;
+}
+main{
+    text-align: center;
+    width: 70vw;
+    margin-top: 10rem;
+}
+main h1{
+    font-family: var(--headings-font);
+    font-weight: 800;
+}
+main section{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+main button{
+    margin-top: 3rem;
+    background-color: var(--pink);
+    border: none;
+    color: var(--very-pale-blue);
+    padding: 1.2rem 3rem 1.2rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+@media (max-width:424px){
+    main button{
+        font-size: 4vw;
+    }
+}
+.first-image{
+    max-width: 75%;
+    margin-top: 8rem;
+}
+.paragraph-2 h2{
+    font-size: 3rem;
+    margin: auto;
+}
+.paragraph-2 div{
+    margin-top: 4rem;
+}
+/*  */
+.paragraph-3 img{
+    max-width: 75%;
+}
+.paragraph-3 h2{
+    font-weight: 900;
+}
+.paragraph-3{
+    text-align: center;
+    line-height: 1.2;
+}
+.paragraph-3 div{
+    padding: 0 2rem 0 2rem;
+    margin: 11rem 0 7rem 0;
+}
+.paragraph-3 div div{
+    margin-top: 0;
+}
+.read-par{
+    width: 90%;
+    font-family: var(--headings-font);
+    font-weight: 900;
+    text-align: center;
+    margin: 10rem 0 14rem 0;
+}
+.read-par button{
+    background-color: var(--pink);
+    border: none;
+    border-radius: 2rem;
+    color: var(--very-pale-blue);
+    padding: 1rem 2rem 1rem 2rem;
+}
+footer{
+    text-align: left;
+    color: var(--very-pale-blue); 
+    /* background-color: var(--very-dark-cyan); */
+}
+footer .container{
+    display: grid;
+    margin-left: 2rem;
+    grid-template-areas: 
+    "top" 
+    "bottom";
+    gap: 6rem;
+}
+/* footer{
+    background-image: url("images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 22;
+} */
+picture{
+    display: block;
+    width: 100%;    
+    
+}
+img{
+    width: 100%;
+    margin-bottom: -10px;
+}
+ .maincontainer{
+    background-color: var(--very-dark-cyan);
+}
+.container :nth-child(2){
+    grid-area: top;
+    padding-right: 1rem;
+}
+.container :nth-child(1){
+    grid-area: bottom;
+    padding-right: 1rem;
+}
+.container div button{
+    color: var(--very-pale-blue);
+    background-color: var(--pink);
+    border: none;
+    border-radius: .4rem;
+    height: 2.5rem;
+    padding: .7rem 2rem 1.6rem 1rem;
+    width: 8rem;
+    margin-top: .5rem;
+}
+.container input{
+    width: 90%;
+    height: 2.5rem;
+    border-radius: .4rem;
+    border: none;
+}
+.subcontainer1 p:nth-child(1){
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: var(--headings-font);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.subcontainer1 p:nth-child(1)::before{
+    content: url("images/icon-messages.svg");
+    color: var(--very-pale-blue);
+    position: relative;     
+}
+.container h2{
+    margin-top: .5rem;
+}
+.phone{
+    padding-top: 1rem;
+}
+.gmail {
+    padding-bottom: 1rem;
+}
+.phone::before{
+    content: url("images/icon-phone.svg");
+    padding-right: .7rem;
+}
+.gmail::before{
+    content: url("images/icon-email.svg");
+    padding-right: .7rem;
+}
+.subcontainer1 ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-bottom: 2rem;
+    align-items: left;
+    padding-left: 0;
+}
+.subcontainer1 ul li{
+    padding-right: 0;
+    margin-right: 0;
+}
+.bottom-button{
+    display: flex;
+    flex-direction: column;
+}
+.supercontainer{
+    display: block;
+}
+@media(min-width: 836px) {
+    .paragraph-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+    }
+    .paragraph-2 h2{
+        font-size: 4rem;
+    }
+    .paragraph-3{
+        width: 85%;
+    }
+    .paragraph-3 h2{
+        justify-content: left;
+    }
+    .paragraph-3 :nth-child(1){
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1 1 auto;
+        align-items: center;
+        text-align: left;
+    }
+    .paragraph-3-2{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        align-items: center;
+        text-align: left;
+    }
+    .paragraph-3 :nth-child(3){
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1 1 auto;
+        align-items: center;
+        text-align: left;
+    }
+    .paragraph-3 div{
+        margin-bottom: 0;
+    }
+    .paragraph-3 img{
+        max-width: 50%;
+    }
+    footer .container{
+        /* display: grid;
+        margin-left: 2rem; */
+        grid-template-columns: 1fr 1fr;
+        word-wrap: break-word;
+        grid-template-areas: 
+        "bottom top" ;
+        gap: 10%;
+       justify-content: center;
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .bottom-button{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .container div button{
+        margin-top: 0;
+    }
+    /* footer{
+        background-image: url("images/bg-footer-top-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    } */
+}
+/* * {
+    outline: 1px solid #f00 !important;
+  } */
